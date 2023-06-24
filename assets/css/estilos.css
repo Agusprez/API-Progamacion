@@ -5,31 +5,38 @@ body {
 }
 
 .container {
-    background:  linear-gradient(90deg, #87CEEB, transparent 90%, lightgrey);
+    background: linear-gradient(90deg, #87CEEB, transparent 90%, lightgrey);
     margin-top: 1%;
     margin-bottom: 1%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
+
 .imagen1 {
     height: 8em;
 
-} 
+}
+
 .image-container {
-      width: 200px;
-      height: 200px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .marca {
-    background:  linear-gradient(90deg, #87CEEB,  lightgrey);
+    background: linear-gradient(90deg, #87CEEB, lightgrey);
+}
+
+div.espaciador {
+    margin-top: 20px;
 }
