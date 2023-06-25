@@ -24,34 +24,34 @@
     <div>
       <h2>Alta de Producto</h2>
       <div class="row">
-        <form id="form_alta_productos">
-          <div class="form-group">
-            <label for="nombre">Nombre del producto:</label>
-            <input class="form-control" type="text" id="nombre" placeholder="Ingrese el nombre del producto">
-            <div class="espaciador"></div>
-            <label for="descripcion">Descripcion del producto:</label>
-            <input class="form-control" type="text" id="descripcion" placeholder="Breve descripcion de tu producto"
-              required>
-            <div class="espaciador"></div>
-            <label for="precio">Precio del producto:</label>
-            <input class="form-control" type="number" id="precio" placeholder="Precio" required>
-            <div class="espaciador"></div>
-            <label for="categoria">Categoria del producto:</label>
-            <!-- <input class="form-control" type="text" id="categoria" required> -->
-            <div class="espaciador"></div>
-            <select class="form-select">
-              <option selected value="" disabled>Seleccionar opción</option>
-              <option value="1">Aseguradores</option>
-              <option value="2">Cuerdas</option>
-              <option value="3">Cascos</option>
-              <option value="4">Pédulas</option>
-              <option value="5">Arnés</option>
-            </select>
-            <div class="espaciador"></div>
-            <label for="imagen">Imagen del producto:</label>
-            <input class="form-control" type="file" accept=".jpg" id="imagen">
-            <div class="espaciador"></div>
-          </div>
+        <form id="form_alta_producto" class="form-group">
+          <label for="producto_nombre">Nombre del producto:</label>
+          <input class="form-control" type="text" id="producto_nombre" placeholder="Ingrese el nombre del producto"
+            autocomplete="off">
+          <div class="espaciador"></div>
+          <label for="producto_descripcion">Descripcion del producto:</label>
+          <input class="form-control" type="text" id="producto_descripcion"
+            placeholder="Breve descripcion de tu producto" required autocomplete="off">
+          <div class="espaciador"></div>
+          <label for="producto_precio">Precio del producto:</label>
+          <input class="form-control" type="number" id="producto_precio" placeholder="Precio" required
+            autocomplete="off">
+          <div class="espaciador"></div>
+          <label for="producto_categoria">Categoria del producto:</label>
+          <!-- <input class="form-control" type="text" id="categoria" required> -->
+          <select class="form-select" id="producto_categoria">
+            <option selected disabled>Seleccionar opción</option>
+            <option value="1">Aseguradores</option>
+            <option value="2">Cuerdas</option>
+            <option value="3">Cascos</option>
+            <option value="4">Pédulas</option>
+            <option value="5">Arnés</option>
+          </select>
+          <div class="espaciador"></div>
+          <label for="producto_imagen">Imagen del producto:</label>
+          <input class="form-control" type="file" accept=".jpg" id="producto_imagen" autocomplete="off">
+          <div class="espaciador"></div>
+
           <button class="btn btn-primary" type="submit">Dar de alta nuevo producto</button>
           <button class="btn btn-secondary" type="button">Cancelar</button>
         </form>
