@@ -57,6 +57,36 @@ class baseDeDatos {
         }
     }
 
+    function insert($tabla, $campos, $valores, $arr_prepare = null) {
+        $sql = "INSERT INTO" . $tabla . "(". $campos . ") VALUES ($valores)";
+       
+        $recurso = $this-> gbd -> prepare($sql);
+        $recurso -> execute($arr_prepare);
+        if($recurso) {
+            return $this->lastInsertId();
+        } else {
+            echo "<pre>";
+            print_r($recurso-> errorInfo());
+            echo "<pre>";
+            throw New Excepcion("No se pudo realizar  la consulta solicitada"); 
+        }
+    }
+
+    function update($tabla, $campos, $filtros, $arr_prepare = null){
+        $sql = "UPDATE" . $table . "SET" . $campos . "WHERE" . $filtros;
+
+        $recurso = $this-> gbd -> prepare($sql);
+        $recurso -> execute($arr_prepare);
+        if($recurso) {
+            return $this->lastInsertId();
+        } else {
+            echo "<pre>";
+            print_r($recurso-> errorInfo());
+            echo "<pre>";
+            throw New Excepcion("No se pudo realizar  la consulta solicitada"); 
+        }
+    }
+    }
 
 
 
