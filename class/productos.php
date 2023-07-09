@@ -1,6 +1,6 @@
 <?php
 
-  class productos {
+  class Productos {
 
     protected $id;
     public $nombre;
@@ -60,30 +60,10 @@
       return $db->update("productos","nombre_productos=?, imagen_producto=?, descripcion_producto=?, precio_producto=?,categoria_id=?","id=?",array($this->id, $this->nombre,$this->descripcion, $this->precio, $this->imagen,$this->categoria));
     }
 
-    public function lsitar(){
+    public function listar(){
       $db = new baseDeDatos("mysql", "miproyecto","127.0.0.1","root","");
       return $db->select("productos");
     }
-
-
-
   }
-
-
-
-
-
   }
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
